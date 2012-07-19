@@ -2,9 +2,14 @@
 
 ## History
 0.01 create project
+
 0.02 updated readme
+
 0.03 commented out all console debugging
+
 0.04 fixed vowel uppercase bug
+
+0.05 removed all console debugging
 
 ## Credits
 The people that made this:

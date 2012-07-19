@@ -10,9 +10,6 @@ var englishToPigLatin =  function( str ) {
 
 	var spaceRegex = /\s*\s|\W\s*\s|\W$/g;
 	var spaceMatches = str.match( spaceRegex );
-
-	 // console.log( "WORD MATHCES: " + wordMatches.length );
-	 // console.log( wordMatches );
 	
 	for ( var i = 0; i < wordMatches.length; i++ ) {
 		
@@ -24,17 +21,14 @@ var englishToPigLatin =  function( str ) {
 			if ( vowelRegex.test( wordMatches[i] ) ) { // vowel 
 				
 				wordMatches[i] = wordToPig( wordMatches[i], true );
-				//console.log(wordMatches[i] + " VOWEL");
 			
 			} else if ( numberRegex.test( wordMatches[i] ) ){ // not vowel or consonant
 			
 				wordMatches[i] = wordMatches[i];
-				//console.log( wordMatches[i] + " OTHER");
 			
 			} else { // consonant
 
 				wordMatches[i] = wordToPig( wordMatches[i], false );
-				//console.log( wordMatches[i] + " CONSTANT");
 			
 			}
 		
@@ -48,17 +42,6 @@ var englishToPigLatin =  function( str ) {
 	
 	}
 
-	 // console.log( "" );
-	 // console.log( "SPACE MATHCES: " + spaceMatches.length );
-	 // console.log( spaceMatches );
-	
-	// for (var i = 0; i < spaceMatches.length; i++) {
-	
-	// 	console.log( spaceMatches[i] );
-	
-	// }
-
-	// console.log( "" );
 	return twoArraysToString( wordMatches, spaceMatches );
 
 
@@ -92,9 +75,8 @@ var wordToPig = function( str, isVowel ) {
 		pigStr = capitaliseFirstLetter( pigStr );
 	}
 
-	//console.log(pigStr);
-
 	return pigStr;
+
 }
 
 // capitaliseFirstLetter : converts first character of a string to uppercase
@@ -122,8 +104,6 @@ var twoArraysToString = function( wordArray, spaceArray) {
 		}
 		
 	}
-
-	//console.log(pigStr);
 
 	return pigStr;
 
