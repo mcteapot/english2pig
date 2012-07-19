@@ -1,5 +1,5 @@
-// Arjun prakash
-// English to Pig Latan Converter
+// Arjun Prakash
+// English to Pig Latin Converter
 // 07.18.12
 
 // englishToPigLatin : converts sentence to pig latan
@@ -16,7 +16,7 @@ var englishToPigLatin =  function( str ) {
 	
 	for ( var i = 0; i < wordMatches.length; i++ ) {
 		
-		var vowelRegex = /^[aeiou]/;
+		var vowelRegex = /^[AEIOU]|^[aeiou]/;
 		var numberRegex = /^[0-9]|^_/;
 		
 		if ( wordMatches[i] ) {
@@ -97,7 +97,7 @@ var wordToPig = function( str, isVowel ) {
 	return pigStr;
 }
 
-// capitaliseFirstLetter : converts first character to uppercase
+// capitaliseFirstLetter : converts first character of a string to uppercase
 var capitaliseFirstLetter = function( str ) {
 
  return str.toUpperCase().charAt(0) + str.substring(1);
@@ -143,7 +143,6 @@ console.log( englishToPigLatin( string02 ) );
 console.log( "" );
 console.log( englishToPigLatin( string03 ) );
 
-//wordToPig("I", false)
 
 
 

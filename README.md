@@ -2,6 +2,9 @@
 
 ## History
 0.01 create project
+0.02 updated readme
+0.03 commented out all console debugging
+0.04 fixed vowel uppercase bug
 
 ## Credits
 The people that made this:
