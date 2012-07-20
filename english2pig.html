@@ -8,11 +8,17 @@
 				background-color: #f0f0f0;
 				margin: 0px;
 				overflow: hidden;
+				text-align: center;
+			}
+			textarea {
+				height: 200; 
+				width: 400;
+				resize: none;
 			}
 			#info {
 				text-align:center;
 				z-index	: 1;
-				position: absolute;
+				position: center;
 				top: 0px; width: 100%;
 				padding: 5px;
 			} 
@@ -22,9 +28,27 @@
 		</style>
 	</head>
 	<body>
-		<div id="info"><a href="http://cyborgdino.com/" target="_blank">cyborgdino.com</a> - English 2 Pig</div> 
+		<div id="info">
+			<p>
+				<a href="http://cyborgdino.com/" target="_blank">cyborgdino.com</a> - English 2 Pig
+			</p>
+		</div>
+		<div id="form_area">
+			<p>
+				<form>
+					<textarea id="english_text" cols="70" rows="15"></textarea>
+					<br>
+					<input id="english_button" type="button" value="translate" style="height: 5em; width: 10em">
+				</form>
+			</p>
+			<p id="workingP">
+				<h3 id="pig_text"></h3>
+			</p>
+		</div> 
 		<!-- include javascript files -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/page.js"></script>
 	</body>
 </html>
 

@@ -11,6 +11,8 @@
 
 0.05 removed all console debugging
 
+0.06 UI added and jQuery functionality
+
 ## Credits
 The people that made this:
 

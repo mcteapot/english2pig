@@ -110,11 +110,10 @@ var twoArraysToString = function( wordArray, spaceArray) {
 }
 
 
-
 // OUTPUT
 var string01 = "Hello";
 var string02 = "Another";
-var string03 =  "Bacon is awesome! Sometimes, in the morning, I’ll have bacon on toast for breakfast."
+var string03 = "Bacon is awesome! Sometimes, in the morning, I’ll have bacon on toast for breakfast."
 
 console.log( "" );
 console.log( englishToPigLatin( string01 ) );
@@ -122,8 +121,6 @@ console.log( "" );
 console.log( englishToPigLatin( string02 ) );
 console.log( "" );
 console.log( englishToPigLatin( string03 ) );
-
-
 
 
 
