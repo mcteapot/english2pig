@@ -14,6 +14,8 @@ var pigConvert = function() {
 
 }
 
-$("document").ready( fillTextfeald );
+$( "document" ).ready( fillTextfeald );
+$( "document" ).ready( pigConvert );
 
-$("#english_button").click(  pigConvert );
+//$( "#english_button" ).click(  pigConvert );
+$( "#english_text" ).bind("keyup", pigConvert );

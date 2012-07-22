@@ -13,6 +13,8 @@
 
 0.06 UI added and jQuery functionality
 
+0.07 Live update of text
+
 ## Credits
 The people that made this:
 
